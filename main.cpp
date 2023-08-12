@@ -21,6 +21,9 @@ int fs_run(str command) {
         return std::stoi(parse_command(command)[1]) + std::stoi(parse_command(command)[2]);
     } else if (command.find("-") != str::npos) {
         return std::stoi(parse_command(command)[1]) - std::stoi(parse_command(command)[2]);
+    } else if (command.find("&") != str::npos) {
+        std::system(parse_command(command)[1].c_str());
+        std::system(parse_command(command)[1].c_str());
     } else {
         return std::system(command.c_str());
     }
