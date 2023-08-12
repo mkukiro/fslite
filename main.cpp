@@ -11,9 +11,7 @@ std::vector<str> parse_command(const str& command) {
     std::vector<std::string> parts;
     std::string part;
 
-    while (iss >> part) {
-        parts.push_back(part);
-    }
+    while (iss >> part) { parts.push_back(part); }
 
     return parts;
 }
