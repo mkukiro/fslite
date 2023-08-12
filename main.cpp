@@ -31,6 +31,7 @@ int fs_run(str command) {
 
 int main() {
     while (true) {
+        std::cout << "Welcome To Freeshell Lite \n by mkukiro \n"
         std::cout << "\033[33m~> \033[0m";
         std::string command;
         std::getline(std::cin, command);
